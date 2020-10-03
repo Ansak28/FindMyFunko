@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>Encuentra tu Funko Favorito</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static',filename='styles/createPartner.css') }}" rel="stylesheet" type= "text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    
+    <div class="textito">
+      <p id="texto">1) &nbsp;&nbsp;   Informacion Personal</p>
+    </div>
+    <img src="static/images/funcionario2.png" id="createSM">
+    <div class="contenedor">
+      <div class="triangle">
+      </div>
+      <form id="formUser" method="POST" >
+        <p class="letras" id="nombre">Nombre</p>
+        <input form="formUser" type="text" class="content" placeholder="Juan" name="nombre" value="{{
+          request.form.nombre }}">
+        <p class="letras" id="nombre">Apellidos</p>
+        <input form="formUser" type="text" class="content" placeholder="Perez" name="apellidos" value="{{
+          request.form.apellidos }}">
+        <p class="letras" id="nombre">Fecha de Nacimiento</p>
+        <input id="fnac"  form="formUser" type="date" class="content" name="fNac" value="{{
+          request.form.fNac }}">
+        <p class="letras" id="nombre">Email</p>
+        <input form="formUser" type="email" class="content" name="username"  placeholder="JP@gmail.com" value="{{
+          request.form.username }}">
+        <p class="letras" id="nombre">DNI</p>
+        <input form="formUser" type="tel" class="content" placeholder="75618720" name="dni" value="{{
+          request.form.dni }}">
+        <p class="letras" id="nombre">Password</p>
+        <input form="formUser" type="password"  name="password"  class="content" value="{{
+          request.form.password }}">
+        <button type="submit" value="Submit" id="botonRegistrar">Registrarse</button>
+      </form>
+    </div>
+  </body>
+</html>
+
