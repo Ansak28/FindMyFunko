@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "findmyfunko-dfbb4",
+  "private_key_id": "f24033b88ec606c36171fab44b1ca30381f8fc6b",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDUE21LlsARy2Dh\n1Yk7ec5Tikcw0WZ0MTyExvJeML9p61MUoJLRX109P/7rk0q6gPss0Y4AASpsXlkg\nKqZfPlR+NeztUVgHzBLH/rkTP0B8QGqAYygVc81xil20rrOoKLPkwjwECFgycrUJ\n66WjUSZXr7DDmgXrNrQ/J02y6ibzsRV5RYS9RyiP1gr51qBRYhAh3bCIt+ZN/diz\nD6fZOUD6MRd4+sISzCjxi74Cy7A7stC/hUMgqk255e/4Km4MXOcFfz1d9WR7LnGA\nj3CP4ZLn09An69IszZcdWsiKwZhpHpVLh8sIeMko/xEYmiPADU18XjezHPXidG/s\nPeH2dz7vAgMBAAECgf8L+C2LnS5UO821dJY51YiRQixFuS/xmfafORF01nLjispW\n2SJCP1DfxO4eVxRM9bkC7BkUVpN6sbEhi/FbM7aD+XoNMxc+RbkyqrrhoCMnsixD\nglu9hOKnM89k4zxAk3sdmNJHDBdDk7KDQpG+EklPgkJgx9Cn9eFQtbyCPwpJGRsz\nrJTfjFfMsQ10rQqOKEXzjI5muBLFjiACtqHGFmyFMj8ob3n2l9KGivF8LijRVBLF\nCdGAyBDV8jjMVJ5i/vA47PPr76uqWBq8p6QRH0sWbu4FbK5eOW88ddFSsEwnm0aU\nSa9H4GbsMeJM7o1nhrKgX2xZt21vbGnvJBU3mXkCgYEA9QqM79YAn/eLsSYlcq4O\nQTqTJqTYvsgzQEFqBPF4cSgbEYszEyFPBJW+4lKo/liOjo0LYTAJu5FdkONbwbYi\n5khF7EhNM+q0kLm3mb8EjRclCoAUpYSG+IfTXkc1/tX3zny4U0KFfUTSGAkXlOXV\n5qjBkBcTXa1GXgb5Ok0uK2kCgYEA3Y91xn3ZiByPwNdd3eY5/2fT1JhZldr3z5y3\nGbSdvDDzTu27iPyGKjUTX2W2DetOn2ian1UTbRmOZIUAEz/A2aoOAcoqE7uZ5T70\nlKXQDa50xGrRxcxAH2Wlzt8IN0RwsrTs3Tr73o31VvTJ/eDGg7JVlZJK3Cm8q3lP\nQa9eBJcCgYEA1LIBv7Rr+m5u7KeF3dNDQE9Npz9ze7Ze9ilRk1TeDKqZRFMlVDeX\nVQ1+EQla8tt/cjDvbb660/rL0pXm8W/dPzIAr6XajXPuo6jwux1ZH/a1CjY+taUh\nWtzbFXyOW9LyNGOBw5N8N03jZ0WNGIufbYWR7jZ5ctiSuc8nyflwV/ECgYA8j8xH\nt3rQo83/jl8QGrBbyguzHvnN5o66Z0H9estq945qUr1iUnRx8RQcjXbYEyvokvVA\n/EZVGhk8DMbafCDA3qT5hENAJZWJfk3om/Jk6vzr+67ffFdCvcw24ewi/0g28RGV\n31udl/wqCrtz9A8PTJ3sRpLD33y8+mnZsI/ofQKBgQDyYxYe1mqw4ESuB64qHlHo\nlDVYDPzsN9vvUfPqPIh1kT3KKr/4V2Qyr7YIRoN8EUza8swZq28Cc5jO/cUO1kuD\nIofuI2G1JJQVwC/pukFd0cNPHKjLrSIZnHvmb9eKnA2Edc3STGKIfaKQcwT554MF\nZ189hQbacsym0Vt5+Hia1Q==\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-gqblt@findmyfunko-dfbb4.iam.gserviceaccount.com",
+  "client_id": "109535192561764214639",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-gqblt%40findmyfunko-dfbb4.iam.gserviceaccount.com"
+}
