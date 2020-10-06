@@ -149,6 +149,6 @@ def signPartner():
 
 @app.route('/home')
 def home():    
-    return "Correcto KKNERAZO" 
+    return "Correcto" 
 
 app.run(debug=True)
