@@ -4,6 +4,11 @@ import requests
 from firebase_admin import credentials, firestore, initialize_app
 import json
 from urllib3.exceptions import HTTPError as BaseHTTPError
+import os
+import tempfile
+# from wtforms import StringField, SubmitField, TextAreaField
+# from wtforms.validators import DataRequired, Email
+
 
 firebaseConfig = {
     "apiKey": "AIzaSyCFioub2_C5x-R9wkIzHaauobaGY3J2XZM",
@@ -115,27 +120,53 @@ def signPartner():
     if request.method == 'POST':
 
         nombre = request.form['nombre']
+        apellidos = request.form['apellidos']
         fNac = request.form['fNac']
         dni = request.form['dni']
         mail = request.form['username']
-        apellidos = request.form['apellidos']
+        tel = request.form['telf']
+
+        nTienda = request.form['nTienda']
+        dirTienda = request.form['dirTienda']
+        emailTienda = request.form['emailTienda']
+        telfTienda = request.form['telfTienda']
 
         data = {
             "nombre" : nombre, 
             "apellidos" : apellidos,
+            "telefono" : tel,
             "fNac" : fNac,
             "dni" :dni,
             "mail" :mail,
             "partner": 'true'
         }
 
+        dataT = {
+            "nombre" : nTienda, 
+            "apellidos" : dirTienda,
+            "telefono" : emailTienda,
+            "fNac" : telfTienda,
+
+        }
+
+
+        # picture = request.files['picture']
+
+        # temp = tempfile.NamedTemporaryFile(delete=False)
+        # picture.save(temp.name)
+
 
         try:
-            print("Email already exists")
+            # print("Email already exists")
             user = auth.create_user_with_email_and_password(mail,request.form['password'])
 
             userId = user['idToken']
             todo_ref.document(userId[:100]).set(data)
+            todo_ref.document(userId[:100]).collection("Tienda").document(userId[:10] + nTienda).set(dataT)
+            # firebase.storage().put(temp.name)
+
+    # Clean-up temp image
+            # os.remove(temp.name)
             return redirect(url_for('login'))
 
         except requests.exceptions.HTTPError as e:
@@ -145,7 +176,7 @@ def signPartner():
                 print("Email already exists")
                 
         
-    return render_template('createPartner.html')
+    return render_template('createPartner_New.html')
 
 @app.route('/home')
 def home():    
