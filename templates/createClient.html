@@ -16,19 +16,19 @@
       </div>
       <form id="formUser" method="POST">
         <p class="letras" id="nombre">Usuario</p>
-        <input form="formUser" type="text" class="content" placeholder="Juan" name="nombreC" value="{{
+        <input form="formUser" type="text" class="content" placeholder="Juan" name="nombreC" autocomplete="off" value="{{
           request.form.nombreC }}">
         <p class="letras" id="nombre">Apellidos</p>
-        <input form="formUser" type="text" class="content" placeholder="Perez" name="apellidosC" value="{{
+        <input form="formUser" type="text" class="content" placeholder="Perez" name="apellidosC" autocomplete="off" value="{{
           request.form.apellidosC }}">
         <p class="letras" id="nombre">Fecha de Nacimiento</p>
-        <input id="fnac"  form="formUser" type="date" class="content" name="fNacC" value="{{
+        <input id="fnac"  form="formUser" type="date" class="content" name="fNacC" autocomplete="off" value="{{
           request.form.fNacC }}">
         <p class="letras" id="nombre">Email</p>
-        <input form="formUser" type="email" class="content" name="usernameC"  placeholder="JP@gmail.com" value="{{
+        <input form="formUser" type="email" class="content" name="usernameC"  autocomplete="off" placeholder="JP@gmail.com" value="{{
           request.form.usernameC }}">
         <p class="letras" id="nombre">Telefono</p>
-        <input form="formUser" type="tel" class="content" placeholder="75618720" name="phoneC" value="{{
+        <input form="formUser" type="tel" class="content" placeholder="75618720" autocomplete="off"  name="phoneC" value="{{
           request.form.phoneC }}">
         <p class="letras" id="nombre">Password</p>
         <input form="formUser" type="password"  name="passwordC"  class="content" value="{{

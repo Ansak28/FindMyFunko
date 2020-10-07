@@ -1,0 +1,190 @@
+<html>
+
+<head>
+  <title>Encuentra tu Funko Favorito</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link href="{{ url_for('static',filename='styles/createPartner_New.css') }}" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="contenedor ">
+
+    <!-- 
+        <label id="cinta">
+          <span class="selec">Datos Personales</span>
+          <span class="noselecc">Datos de Tienda</span>
+          <span class="noselecc">Negocio</span>
+          <span class="noselecc">Contraseña</span>
+        </label>
+
+        <label>
+          <div class="line"></div>
+          <div class="linestrong"></div>
+        </label> -->
+
+    <ul class="nav nav-tabs justify-content-center nivo">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#home">Datos personales</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#menu1">Datos de tienda</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#menu2">Contraseña</a>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <div id="home" class="formularioTotal container tab-pane active">
+        <div class="formularioTotal row">
+          <div id="imagenesForm" class="col-5">
+            <img id="funcionario" src="static/images/funcionario2.png">
+          </div>
+          <div id="form" class="col">
+
+            <div class="row">
+
+              <div class="col">
+                <form id="formUser" method="POST">
+                  <div class="col align-self-start">
+                    <label for="formUser">
+                      <span>Nombre</span><input type="text" form="formulario" name="nombre" id="fNombre"
+                        required="true" />
+                    </label>
+                    <label for="formUser">
+                      <span>Apellidos</span><input type="text" form="formulario" name="apellidos" id="fApellidos"
+                        required="true" />
+                    </label>
+                    <label for="formUser">
+                      <span>Nacimiento</span><input type="date" form="formulario" name="fNac" id="fNac"
+                        required="true" />
+                    </label>
+                    <label for="formUser">
+                      <span>Email</span><input type="email" form="formulario" required="true" id="fEmail"
+                        name="username" />
+                    </label>
+                    <label for="formUser">
+                      <span>Telefono</span><input type="tel" form="formulario" name="telf" id="fTelf" required="true" />
+                    </label>
+                    <label for="formUser">
+                      <span>DNI</span><input type="tel" form="formulario" required="true" id="fDni" name="dni" />
+                    </label>
+                  </div>
+                </form>
+
+                <div class="col-8 align-self-center">
+                  <button id="btnForm1">Siguiente </button>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div id="menu1" class="formularioTotal container tab-pane fade">
+        <div class="formularioTotal row">
+
+          <div id="imagenesForm" class="col-5">
+            <form id="formUser3">
+            <input id="archivito" type="file" 
+              onchange="document.getElementById('blah').src = window.URL.createObjectURL(this.files[0]);document.getElementById('pre').style.display='none';document.getElementById('blah').style.display='block'"
+              style="position: relative;left: 110px;">
+            <img id="blah" alt="your image" width="300" height="300" style="
+          position: relative;
+          left: 130px;
+          top: 60px;
+          display: none;
+          " />
+            <img id="pre" src="static/images/AgregarFoto.PNG"
+              style="display: block;width:300px;height:300px;position:relative;left:110px;top:50px" />
+            </form>
+          </div>
+          <div id="form" class="col">
+            <form id="formUser">
+
+              <div class="row">
+
+                <div class="col">
+
+                  <form id="formUser2">
+                    <label for="formUser2">
+                      <span>Nombre Tienda</span><input type="text" form="formulario" name="nTienda" required="true" />
+                    </label>
+                    <label for="formUser2">
+                      <span>Direccion</span><input type="text" form="formulario" name="dirTienda" required="true" />
+                    </label>
+                    <label for="formUser2">
+                      <span>Email Empresa</span><input type="text" form="formulario" name="emailTienda"
+                        required="true" />
+                    </label>
+                    <label for="formUser2">
+                      <span>Telefono</span><input type="tel" form="formulario" name="telfTienda" required="true" />
+                    </label>
+                </div>
+
+
+              </div>
+
+            </form>
+            <div class="col-8 align-self-center">
+              <button id="btnVolverForm2">Volver </button>
+              <button id="btnForm2">Siguiente </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div id="menu2" class="formularioTotal container tab-pane fade">
+        <div class="formularioTotal row">
+
+          <div id="imagenesForm" class="col-5">
+            <img id="silencio" src="static/images/i16_Silencio.png">
+          </div>
+          <div class="col">
+            <form id="formulario" method="POST">
+              <div class="row">
+
+                <label for="formulario">
+                  <span>Password</span><input type="password" required="true" name="password" />
+                </label>
+                <!-- <label for="formulario">
+                  <span>Password Again</span><input type="email"   required="true" name="username" value="{{
+                    request.form.username}}" />
+                </label> -->
+                <label>
+                  <input type="checkbox" name="field3" required="true" id="CB" />
+                </label>
+                <a id="CBL">Acepto los Terminos y Condiciones</a>
+              </div>
+              <div class="col-8 align-self-center">
+                <button type="submit" value="Submit" id="botonRegistrar">Finalizar </button>
+              </div>
+
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"></script>
+    <script type=text/javascript src="{{
+        url_for('static', filename='js/main.js') }}"></script>
+</body>
+
+</html>
