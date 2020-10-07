@@ -1,0 +1,115 @@
+<html>
+  
+  <head>
+    <title>Encuentra tu Funko Favorito</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static',filename='styles/LandingPage.css') }}" rel="stylesheet" media="screen">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap" rel="stylesheet">  </head>
+  <header>
+    <div id="Space1" class="Espacios"></div>
+    <div id="Logo">
+        <a>
+            <img id="LogoHead" src="static/images/loguito.png">
+        </a>
+    </div>
+    <div id="Space2" class="Espacios"></div>
+    <nav id="barra">
+        <ul id="CintaOpciones">
+            
+            <li>
+                <a>  Inicio </a> 
+            </li>
+            
+            <li>
+                <a> Catalogo</a>
+            </li>
+            <li>
+                <a> Bolsa</a>
+            </li>
+            <li>
+                <a>Busqueda</a>
+            </li>
+            <div class="linestrong"></div>
+        </ul>
+    </nav>
+  </header>
+  <body>
+
+      <div id="Start">
+        <div id="Content">
+            <div id="Texto">
+                <a>
+                    Increibles <br>
+                    Funkos esperan <br>
+                    por ti
+                </a>
+            </div>
+            <div id="Buscador">
+                <form id="Buscado">
+                    <input type="text" name="Buscador" id="BarraBusqueda" placeholder="Ingresa el Numero de Serie o Nombre del Funko">
+                </form>
+            </div>
+            <div id="Mercury">
+
+                <img src="static/images/i10_FM.png" style="width: 560px;height: 400px;top: 20px;position: relative;left: 50px;" >
+    
+            </div>
+        </div>
+
+      </div>
+
+      <div id="Catalogo">
+        <div id="ContentCatalogo">
+            <div id="Trio" style="width: 700px;">
+
+                <img src="static/images/Trio-removebg-preview.png" style="width: 560px;height: 450px;top: 10px;position: relative;left: 50px;" >
+    
+            </div>
+            <div id="TextoCatalogo">
+                <a>
+                    Las mejores sagas <br>
+                    en un solo lugar <br><br>
+                    <a style="font-size: 25px;position: relative;left: 75px;font-weight: lighter;">¿Cual es tu Favorita?</a>
+                </a>
+            </div>
+            <form id="CatalogoForm">
+                <button type="submit" value="Submit" id="botonCatalogo">Ver Catalogo</button>
+            </form>
+        </div>
+      </div>
+      
+      <div id="NotFound">
+
+        <div id="ContentNotFound">
+            <div id="TextoNotFound">
+                <a>
+                    ¿No encuentras <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;un Funko? <br><br>
+                    <a style="font-size: 20px;position: relative;left:110px;top:50px;">Dejanos la informacion del Funko</a> <br>
+                    <a style="font-size: 20px;position: relative;left: 93px;top:50px">Los partners se comunicaran contigo</a>
+                </a>
+            </div>
+
+                <form id="NotFoundForm">
+                    <button type="submit" value="Submit" id="botonFormulario">Ver Formulario</button>
+                </form>
+
+            <div id="Mercury">
+
+                <img src="static/images/i6.png" style="width: 560px;height: 440px;top: 10px;position: relative;left: 50px;" >
+    
+            </div>
+        </div>
+
+      </div>
+      
+
+   
+  </body>
+
+  <footer>
+    <img style="width: 100%;height: 420px;" src="static/images/Footer.PNG">
+  </footer>
+</html>
+
