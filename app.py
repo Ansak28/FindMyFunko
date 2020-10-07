@@ -180,6 +180,6 @@ def signPartner():
 
 @app.route('/home')
 def home():    
-    return "Correcto" 
+    return render_template('LandingPage.html')
 
 app.run(debug=True)
