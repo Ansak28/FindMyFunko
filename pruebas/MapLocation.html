@@ -1,0 +1,80 @@
+<html>
+  
+  <head>
+    <title>Encuentra tu Funko Favorito</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="MapLocation.css" rel="stylesheet" media="screen">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/tt-norms-medium" type="text/css"/>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap" rel="stylesheet">  </head>
+  <header>
+    <div id="Space1" class="Espacios"></div>
+    <div id="Logo">
+        <a>
+            <img id="LogoHead" src="ImagFunkos/loguito.png">
+        </a>
+    </div>
+    <div id="Space2" class="Espacios"></div>
+    <nav id="barra">
+            
+
+                <a style="grid-column: 2;">  Inicio </a> 
+ 
+            
+
+                <a style="grid-column: 4;"> Catalogo</a>
+
+                <a style="grid-column: 6;"> Bolsa</a>
+
+                <a style="grid-column: 8;">Busqueda</a>
+
+         
+    </nav>
+    <div class="linestrong"></div>
+  </header>
+  <body>
+
+    <div id="Contenedor">
+        <div style=" grid-row: 1;grid-column: 1;" class="Spaces"></div>
+        <div style=" grid-row: 1;grid-column: 2;" class="Spaces"></div>
+        <div style=" grid-row: 1;grid-column: 3;" class="Spaces"></div>
+        <div style=" grid-row: 2;grid-column: 1;" class="Spaces"></div>
+        <div style=" grid-row: 2;grid-column: 3;" class="Spaces"></div>
+        <div style=" grid-row: 3;grid-column: 1;" class="Spaces"></div>
+        <div style=" grid-row: 3;grid-column: 2;" class="Spaces"></div>
+        <div style=" grid-row: 3;grid-column: 3;" class="Spaces"></div>
+        <div id="ContenedorInside">
+            <div id="Parametros">
+                <div style="grid-row: 2;" >
+                    <label>Precio</label>
+                    <input type="range">
+                </div>
+                <div style="grid-row: 3;">
+                    <label>Lugar de Preferencia</label>
+                    <select>
+                        <option disabled selected>Selecciona una opción</option>
+                        <option value="item 1">Item 1</option>
+                        <option value="item 2">Item 2</option>
+                        <option value="item 3">Item 3</option>
+                    </select>
+                </div>
+                <div style="grid-row:4;width: 35.5vw;">
+                    <img style="height: 20vw;margin-left: 30%;margin-top: 5%;" src="ImagFunkos/Sully.PNG">
+                </div>
+            </div>
+            <div id="map">
+            </div>
+            <script type="text/javascript" src="map.js"></script>
+            <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCM-1oaJiCMKdm5dWYQ61bHiCSA8Hsabww&callback=initMap">
+            </script>
+
+        </div>
+
+    </div>
+   
+  </body>
+
+</html>
+
