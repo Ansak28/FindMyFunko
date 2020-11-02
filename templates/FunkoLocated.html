@@ -1,0 +1,74 @@
+<html>
+  
+  <head>
+    <title>Encuentra tu Funko Favorito</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static',filename='styles/FunkoLocated.css') }}" rel="stylesheet" media="screen">
+    <link type="text/css" href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/tt-norms-medium" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap" rel="stylesheet">  </head>
+  <header>
+    <div id="Space1" class="Espacios"></div>
+    <div id="Logo">
+        <a>
+            <img id="LogoHead" src="static/images/loguito.png">
+        </a>
+    </div>
+    <div id="Space2" class="Espacios"></div>
+    <nav id="barra">
+        <ul id="CintaOpciones">
+            
+            <li>
+                <a>  Inicio </a> 
+            </li>
+            
+            <li>
+                <a> Catalogo</a>
+            </li>
+            <li>
+                <a> Bolsa</a>
+            </li>
+            <li>
+                <a>Busqueda</a>
+            </li>
+            <div class="linestrong"></div>
+        </ul>
+    </nav>
+  </header>
+  <body>
+
+    <div id="Contenedor">
+        <div style=" grid-row: 1;grid-column: 1;" class="Spaces"></div>
+        <div style=" grid-row: 1;grid-column: 2;" class="Spaces"></div>
+        <div style=" grid-row: 1;grid-column: 3;" class="Spaces"></div>
+        <div style=" grid-row: 2;grid-column: 1;" class="Spaces"></div>
+        <div style=" grid-row: 2;grid-column: 3;" class="Spaces"></div>
+        <div style=" grid-row: 3;grid-column: 1;" class="Spaces"></div>
+        <div style=" grid-row: 3;grid-column: 2;" class="Spaces"></div>
+        <div style=" grid-row: 3;grid-column: 3;" class="Spaces"></div>
+        <div id="ContenedorInside">
+            <div id="Funko">
+                <a style="grid-row: 1; margin-top:5%;margin-left: 5%;"> Regresar al mapa</a>
+                <img style="grid-row: 2;height: 62%;margin-left: 25%;margin-top:5%;max-width: 55%;max-height: 60%;" src="static/images/Caja.PNG">
+            </div>
+            <div id="Parametros">
+                <a style="grid-row:1;grid-column:2;margin-top: 25%;margin-left: 25%;"> 459 </a>
+                <a style="grid-row:2;grid-column:1;margin-left: 30%;font-size: 3vw;margin-top: 4%;">CAPITANA <br>MARVEL</a>
+                <a style="grid-row:3;grid-column:1;margin-left: 30%;">Linea: Avenger's Endgame</a>
+                <a style="grid-row:4;grid-column:1;margin-left: 40%;">Serie: 10</a>
+                <a style="grid-row:5;grid-column:1;margin-left: 36%;">Galeria Funko's</a>
+                <a style="grid-row:6;grid-column:1;margin-left: 30%;">Precio: S/.45 00</a>
+                <a style="grid-row:7;grid-column:1;margin-left: 30%;">Direccion: Jiron Paruro</a>
+                <a style="grid-row:8;grid-column:1;margin-left: 30%;">Contacto: 999 888 777</a>
+                <button style="grid-row:9;grid-column:1;margin-left: 30%;margin-left: 40%;" type="submit" value="Submit" id="botonRegistrar">Agregar a Favorios</button>
+                <button style="grid-row:10;grid-column:1;margin-left: 30%;margin-left: 45%;" type="submit" value="Submit" id="botonRegistrar"> + Reservar </button>
+            </div>
+
+        </div>
+
+    </div>
+   
+  </body>
+
+</html>
+
