@@ -1,0 +1,101 @@
+ID,Num. Funko,Nombre,Linea,Colección/ Serie,Nombre C/S,Exclusivo,Motivo,Precio ,Stock bruto,Stock neto,Imagen
+CD59,59,Carl,Disney,Colección,Up movie,0,null,70,5,5,https://photos.app.goo.gl/WsU9p6hB6cz1MK1R9
+RD60,60,Russell,Disney,Colección,Up movie,0,null,500,1,1,https://photos.app.goo.gl/HukRJJYdWgrVR3Kf6
+DD201,201,Dug,Disney,Colección,Up movie,0,null,125,2,2,https://photos.app.goo.gl/tjpr27aoGtDJfRA4A
+DD201H,201,Dug Flocked,Disney,Colección,Up movie,1, Hot Topic,300,8,8,https://photos.app.goo.gl/ZtFwJtft89a7asKH9
+DD202S,202,Dug Cone of Shame,Disney,Colección,Up movie,1,San Diego Comic-Con,1100,6,6,https://photos.app.goo.gl/UswoKEaZYpCVYF7E7
+DS01,1,Darth Vader,Star Wars,Serie,1,0,null,40,7,7,https://photos.app.goo.gl/XnH15tHpHHAh8mnw5
+DS01H,1,Darth Vader Chrome,Star Wars,Serie,1,1,Hot Topic,65,2,2,https://photos.app.goo.gl/vJEP8Z5hv5MFA3xq8
+YS02,2,Yoda ,Star Wars,Serie,1,0,null,40,3,3,https://photos.app.goo.gl/C4BREiKqUtDzbbxG9
+CS06,6,Chewbacca,Star Wars,Serie,1,0,null,72,4,4,https://photos.app.goo.gl/mvBGTkPXGVmWrE1F7
+CS06G,6,Chewbacca Hoth,Star Wars,Serie,1,1,GameStop,75,5,5,https://photos.app.goo.gl/DhnsU1qba3LD6zcN6
+BS08,8,Boba Fett,Star Wars,Serie,2,0,null,80,1,1,https://photos.app.goo.gl/63vgkqbCktpX9SKj8
+RS58,58,Rey,Star Wars,Colección,The force Awakens,0,null,50,2,2,https://photos.app.goo.gl/dLLoqyCSPr6cvLKj8
+KS60,60,Kylo Ren,Star Wars,Colección,The force Awakens,0,null,38,3,3,https://photos.app.goo.gl/ArxaJh6qiu8gHt4V8
+CS63,63,Chewbacca,Star Wars,Colección,The force Awakens,0,null,75,1,1,https://photos.app.goo.gl/EzwvFdi9SxoDenVD9
+CS64,64,C-3PO,Star Wars,Colección,The force Awakens,0,null,40,6,6,https://photos.app.goo.gl/CEMiR8KARRrWorjY7
+HS79,79,Han Solo,Star Wars,Colección,The force Awakens,0,null,42,3,3,https://photos.app.goo.gl/eYeh8rXbJSCgUoJQ8
+BS116S,116,BB-8 Thumbs Up,Star Wars,Colección,The force Awakens,1,San Diego Comic-Con/Hot Topic,90,1,1,https://photos.app.goo.gl/MCPfyXwCfDDfxMs69
+AS130,130,Ahsoka,Star Wars,Colección,Rebels,0,null,100,2,2,https://photos.app.goo.gl/h3aVF5FWt1vQToxr9
+ES134,134,Ezra,Star Wars,Colección,Rebels,0,null,140,0,0,https://photos.app.goo.gl/w3bDoR5wdYDcraFU7
+ZS137,137,Zeb,Star Wars,Colección,Rebels,0,null,50,4,4,https://photos.app.goo.gl/PSc9AQbpNzRK6tY99
+JS138,138,Jyn Erso,Star Wars,Colección,Rogue One,0,null,45,8,8,https://photos.app.goo.gl/XqGdQvHsvNMgNvhM6
+DS143,143,Darth Vader,Star Wars,Colección,Rogue One,0,null,76,2,2,https://photos.app.goo.gl/o9A8DCQTd2mHwWFg7
+HS286,286,Han Solo Endor,Star Wars,Colección,Return of the Jedi,0,null,55,3,3,https://photos.app.goo.gl/bU8zC2tVTEa9TWHp7
+DS288,288,Darth Vader Electrocuted,Star Wars,Colección,Return of the Jedi,0,null,90,2,2,https://photos.app.goo.gl/vpiE5iZJW5haBsSk6
+BS297E,297,Boba Fett Futura Red/Black,Star Wars,Colección,Return of the Jedi,1,Emerald City Comic Con,285,1,1,https://photos.app.goo.gl/ej1jqY6FyYWVQwAA9
+DS299S,299,Darth Maul,Star Wars,Colección,Return of the Jedi,1,Star Wars Celebration,160,1,1,https://photos.app.goo.gl/WoQ7xRnQVx9T5ZoN7
+TS326,326,The Mandalorian,Star Wars,Colección,The Mandalorian,0,null,58,5,5,https://photos.app.goo.gl/rd3FkHQukqwxDb917
+IS328,328,IG-11,Star Wars,Colección,The Mandalorian,0,null,50,3,3,https://photos.app.goo.gl/JCeUKx8RXf2FDbjv6
+TS346,346,The client,Star Wars,Colección,The Mandalorian,0,null,30,7,7,https://photos.app.goo.gl/niBLVBvj1xLWDj6y9
+RT13,13,Rick Grimes,The Walking Dead,Serie,1,0,null,55,2,2,https://photos.app.goo.gl/YAwF8Ey9Xi5Tnmpx7
+GT35,35,Glenn,The Walking Dead,Serie,2,0,null,75,2,2,https://photos.app.goo.gl/kff6BS9QzUa6E8sX8
+MT38,38,Michonne,The Walking Dead,Serie,2,0,null,40,4,4,https://photos.app.goo.gl/Qg6v8KQrBRWxkZ2H6
+BD02,2,Buzz Lightyear,Disney,Colección,Toy Story,0,null,200,1,1,https://photos.app.goo.gl/YmgMEg29dMbSKJGJ8
+WD03,3,Woody,Disney,Colección,Toy Story,0,null,215,1,1,https://photos.app.goo.gl/TNBdLPK4pZP5EoicA
+LD13,13,Lotso,Disney,Colección,Toy Story,0,null,108,2,2,https://photos.app.goo.gl/ki1wDsxjoAY1DvWh6
+MD17,17,Mr. Incredible,Disney,Colección,The incredibles,0,null,180,2,2,https://photos.app.goo.gl/DKa1eWxoFit1Dbr19
+SD18,18,Syndrome,Disney,Colección,The incredibles,0,null,250,1,1,https://photos.app.goo.gl/7YzUeQP9LcmTZuTL6
+ED29,29,Elastigirl,Disney,Colección,The incredibles,0,null,165,2,2,https://photos.app.goo.gl/vK4J7VaguKqTE6QdA
+MD363,363,Mr. Incredible,Disney,Colección,The incredibles 2,0,null,50,4,4,https://photos.app.goo.gl/F28H6QiAGErcBf33A
+ED364,364,Elastigirl,Disney,Colección,The incredibles 2,0,null,50,6,6,https://photos.app.goo.gl/znhurM3AudqsJ3Wa8
+VD365,365,Violet,Disney,Colección,The incredibles 3,0,null,40,3,3,https://photos.app.goo.gl/fJvTFCTVGFeJ9tdy5
+JD367H,367,Jack-Jack Chrome,Disney,Colección,The incredibles 4,1,Hot Topic,80,4,4,https://photos.app.goo.gl/hiTZFd8Q9B3g7kuH6
+DT60,60,Donatello,Teenage Mutant Ninja Turtles,Colección,Television,0,null,110,2,2,https://photos.app.goo.gl/oWcqteaEgc4tVMyi6
+RT61,61,Raphael,Teenage Mutant Ninja Turtles,Colección,Television,0,null,135,1,1,https://photos.app.goo.gl/BLHFYBGW3v2yaDhw9
+MT62,62,Michelangelo,Teenage Mutant Ninja Turtles,Colección,Television,0,null,145,2,2,https://photos.app.goo.gl/ASXX3shMMwp4ydEQ7
+LT63,63,Leonardo,Teenage Mutant Ninja Turtles,Colección,Television,0,null,130,2,2,https://photos.app.goo.gl/HgewReXyM1TxzEjx6
+ST64,64,Splinter,Teenage Mutant Ninja Turtles,Colección,Television,0,null,160,1,1,https://photos.app.goo.gl/uiCYthtkbbEQyzfJ9
+FT141,141,Foot Soldier,Teenage Mutant Ninja Turtles,Colección,Television,0,null,145,4,4,https://photos.app.goo.gl/HBZnKHgCUs973SBg6
+DT05,5,Donatello,Teenage Mutant Ninja Turtles,Colección,8-bit,0,null,55,3,3,https://photos.app.goo.gl/63br5fVXtR4zRShy5
+RT06,6,Raphael,Teenage Mutant Ninja Turtles,Colección,8-bit,0,null,65,2,2,https://photos.app.goo.gl/fqNQ2V2zsuAixzEF7
+MT07,7,Michelangelo,Teenage Mutant Ninja Turtles,Colección,8-bit,0,null,65,4,4,https://photos.app.goo.gl/xoJxwPNdxxKMGQvY9
+LT04,4,Leonardo,Teenage Mutant Ninja Turtles,Colección,8-bit,0,null,70,5,5,https://photos.app.goo.gl/2max8NSHYfq3WRTZA
+SS149,149,Scooby-Doo,Scooby-Doo,Colección,Scooby-Doo,0,null,180,1,1,https://photos.app.goo.gl/qE867B42wFvmQVr29
+SS149B,149,"Scooby-Doo Flocked Purple ""Doo Good""",Scooby-Doo,Colección,Scooby-Doo,1,BoxLunch,150,1,1,https://photos.app.goo.gl/C8KTVGVdnk8Gdov38
+SS150,150,Shaggy,Scooby-Doo,Colección,Scooby-Doo,0,null,100,2,2,https://photos.app.goo.gl/fPWFJrL5zUJUbxte6
+VS151,151,Velma,Scooby-Doo,Colección,Scooby-Doo,0,null,270,1,1,https://photos.app.goo.gl/kopJctHx9g6Tmkkk7
+DS152,152,Daphne,Scooby-Doo,Colección,Scooby-Doo,0,null,145,1,1,https://photos.app.goo.gl/NaVATyBYK2ybXBDp8
+FS153,153,Fred,Scooby-Doo,Colección,Scooby-Doo,0,null,130,3,3,https://photos.app.goo.gl/LekrR3G25BWYiYLfA
+RR112,112,Rick with flask,Rick and Morty,Colección,Rick and Morty,0,null,55,4,4,https://photos.app.goo.gl/U2qAwS98dVf7xsyQA
+MR113,113,Morty with Seeds,Rick and Morty,Colección,Rick and Morty,0,null,45,6,6,https://photos.app.goo.gl/J1ACRAVF9zGnHPxPA
+RR114H,114,Rick with portal gun,Rick and Morty,Colección,Rick and Morty,1,Hot Topic,75,2,2,https://photos.app.goo.gl/G7FWTeoQ65gFY7dS6
+DR140,140,Doofus Rick,Rick and Morty,Colección,Rick and Morty,0,null,65,3,3,https://photos.app.goo.gl/G8V9gDU3U2Vs3YxR9
+ER141,141,Evil Morty,Rick and Morty,Colección,Rick and Morty,0,null,75,2,2,https://photos.app.goo.gl/XqtGrvgSu4z7Nx8K6
+MR174,174,Mr. Meeseeks,Rick and Morty,Colección,Rick and Morty,0,null,55,4,4,https://photos.app.goo.gl/Liz4sA5PNpyWnW646
+SR175,175,Squanchy,Rick and Morty,Colección,Rick and Morty,0,null,40,5,5,https://photos.app.goo.gl/VUAMC3hkGrXXqJWc6
+BR176,176,Bird Person,Rick and Morty,Colección,Rick and Morty,0,null,35,4,4,https://photos.app.goo.gl/o1CnkW9BE2Akee2W9
+MR177,177,Mr. Poopy Butthole,Rick and Morty,Colección,Rick and Morty,0,null,50,5,5,https://photos.app.goo.gl/yi4c1MRsQX6nHhbaA
+SR300,300,Scary Terry,Rick and Morty,Colección,Rick and Morty,0,null,55,3,3,https://photos.app.goo.gl/r8bmDX4HZzqkP5pYA
+BR301,301,Beth wit whine,Rick and Morty,Colección,Rick and Morty,0,null,45,4,4,https://photos.app.goo.gl/n9dYQSwzmtT3QaYB9
+JR302,302,Jerry with Meeseeks Box,Rick and Morty,Colección,Rick and Morty,0,null,45,4,4,https://photos.app.goo.gl/eYz19WkJeB7s161AA
+SR303,303,Summer with phone,Rick and Morty,Colección,Rick and Morty,0,null,45,3,3,https://photos.app.goo.gl/obcvHKShwogLuRt18
+LR304,304,Lawyer Morty,Rick and Morty,Colección,Rick and Morty,0,null,40,5,5,https://photos.app.goo.gl/yxA7eRiFeeKrzXCx5
+PR332,332,Pickle Rick (With laser),Rick and Morty,Colección,Rick and Morty,0,null,55,3,3,https://photos.app.goo.gl/gGLFJW71YmQe548Z9
+PR333,333,Pickle Rick,Rick and Morty,Colección,Rick and Morty,0,null,55,4,4,https://photos.app.goo.gl/maCum14cJonxDiSp6
+PR339,339,Prison Break Rick,Rick and Morty,Colección,Rick and Morty,0,null,45,5,5,https://photos.app.goo.gl/2mosekC6HsaWeQJb8
+SR340,340,Sentient Arm Morty,Rick and Morty,Colección,Rick and Morty,0,null,35,5,5,https://photos.app.goo.gl/zr8ujq2DP775g5jQA
+HR342,342,Hemorrhage,Rick and Morty,Colección,Rick and Morty,0,null,40,2,2,https://photos.app.goo.gl/CauNXw9mCgszF4Hf8
+WR341,341,Warrior Summer,Rick and Morty,Colección,Rick and Morty,0,null,35,3,3,https://photos.app.goo.gl/bkK54Z1iVAE73EBn7
+SR344H,344,Scary Terry No Pants,Rick and Morty,Colección,Rick and Morty,1,Hot Topic,75,2,2,https://photos.app.goo.gl/eWdFX1XZJJy14FMB9
+TR439,439,Teacher Rick,Rick and Morty,Colección,Rick and Morty,0,null,40,1,1,https://photos.app.goo.gl/LiReccaiHJictBWr8
+NR441,441,Noob Noob,Rick and Morty,Colección,Rick and Morty,0,null,40,5,5,https://photos.app.goo.gl/27BonxmyGLB2SuM16
+BP453,453,Bulbasaur,Pokémon,Colección,Pokémon,0,null,55,3,3,https://photos.app.goo.gl/sAgVFQmw9vX63ZT78
+CP455,455,Charmander,Pokémon,Colección,Pokémon,0,null,55,2,2,https://photos.app.goo.gl/3GE8KqJ4DdmKBC918
+SP504,504,Squirtle,Pokémon,Colección,Pokémon,0,null,55,3,3,https://photos.app.goo.gl/JF6MUhPF58LKYhEK6
+EP577,577,Eevee,Pokémon,Colección,Pokémon,0,null,55,4,4,https://photos.app.goo.gl/TBXS9aUG96F3WnScA
+PP579,579,Pichu,Pokémon,Colección,Pokémon,0,null,50,8,8,https://photos.app.goo.gl/YA4uQg8gFDmWuome7
+VP580,580,Vulpix,Pokémon,Colección,Pokémon,0,null,50,4,4,https://photos.app.goo.gl/iq97rDnkHzL7g29A7
+MP581,581,Mewtwo,Pokémon,Colección,Pokémon,0,null,60,3,3,https://photos.app.goo.gl/QcanfFc4yc3o9nGfA
+MP582,582,Mr. Mime,Pokémon,Colección,Pokémon,0,null,55,2,2,https://photos.app.goo.gl/QL7tVqyqEGsFHpFP7
+BP361,361,Black Ranger,Power Rangers,Colección,Television,0,null,60,1,1,https://photos.app.goo.gl/ECstxgPMQuGC4Uxr8
+RP23,23,Red Ranger,Power Rangers,Colección,Television,0,null,115,3,3,https://photos.app.goo.gl/jGkBZLNYZ6JXPf7S8
+GP360,360,Green Ranger,Power Rangers,Colección,Television,0,null,150,1,1,https://photos.app.goo.gl/iZ342ShKPXpVse4Z8
+BP396,396,Black Ranger,Power Rangers,Colección,Movies,0,null,50,3,3,https://photos.app.goo.gl/AoyHdmPQdPxJpwuj7
+PP397,397,Pink Ranger,Power Rangers,Colección,Movies,0,null,45,2,2,https://photos.app.goo.gl/71exSKpoKytGXbZCA
+YP398,398,Yellow Ranger,Power Rangers,Colección,Movies,0,null,45,4,4,https://photos.app.goo.gl/32igxqTt446efi938
+NN71,71,Naruto,Naruto Shippuden,Colección,Naruto Shippuden,0,null,65,2,2,https://photos.app.goo.gl/TSnpZfrS5ePDe2FM8
+SN72,72,Sasuke,Naruto Shippuden,Colección,Naruto Shippuden,0,null,70,3,3,https://photos.app.goo.gl/hdr7b6L3xa8vervx9
+KN182,182,Kakashi,Naruto Shippuden,Colección,Naruto Shippuden,0,null,60,4,4,https://photos.app.goo.gl/98XZGXPzAbVEexao8
+SN183,183,Sakura,Naruto Shippuden,Colección,Naruto Shippuden,0,null,55,4,4,https://photos.app.goo.gl/VkpUVCAKLgnU3nFZA
+NN185G,185,Naruto (Sage Mode),Naruto Shippuden,Colección,Naruto Shippuden,1,GameStop,155,1,1,https://photos.app.goo.gl/7ymYBxTHiVwmA6iHA
