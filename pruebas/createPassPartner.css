@@ -1,0 +1,147 @@
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+    opacity: 0.2; /* Firefox */
+}
+
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+button:focus {outline:0;}
+
+body{
+    background-color: rgba(54, 112, 171, 0.72);
+}
+
+.contenedor{
+    background-color: white;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    height: 500px;
+    width: 1050px;
+}
+
+#navegacionCreateP{
+    width: 100%;
+    height: 70px;
+    position: relative;
+    top: 40px;
+}
+
+label span{
+    font-family: 'Abril Fatface', cursive;
+    padding-left:120px
+}
+
+#cinta{
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+.noselecc{
+    color: grey;
+}
+
+.line{
+    width: 100%;
+    height: 47px;
+    border-bottom: 1px solid black;
+    position: relative;
+    top: -10px;
+}
+
+.linestrong{
+    width: 15%;
+    height: 47px;
+    border-bottom: 3px solid black;
+    position: relative;
+    top: -59px;
+    left: 765px;
+}
+
+.formularioTotal{
+    width: 100%;
+    height: 80%;
+    position: relative;
+    top: 35px;
+    background-color: white;
+}
+
+#imagenesForm{
+    width: 50%;
+    height: 90%;
+    position: relative;
+    top: 25px;
+
+}
+
+#silencio{
+    width: 70%;
+    height: 100%;
+    position: relative;
+    left: 100px;
+}
+
+#form{
+    width: 55%;
+    height: 90%;
+    top: -335px;
+    left: 530px;
+    position: relative;
+
+}
+
+#formulario{
+    position: relative;
+    top: 80px;
+    left: -60px;
+}
+
+input{
+    background: transparent;
+	border: none;
+	border-bottom: 1px dashed #83A4C5;
+	width: 275px;
+	outline: none;
+	padding: 0px 0px 0px 0px;
+    font-style: italic;
+    padding-right: 15px;
+    padding-top: 30px;
+}
+
+form span{
+    padding-right: 15px;
+    padding-top: 30px;
+}
+
+
+button{
+    border-radius: 25px;
+    margin: auto;
+    position: relative;
+    border: 5px transparent;
+    background-color: rgba(54, 112, 171, 0.72);
+    top: 40px;
+    left: 400px;
+    width: 100px;
+    height: 50px;
+    color: black;
+}
+
+#CB{
+    position: relative;
+    top: 20px;
+    left: 80px;
+}
+
+#CBL{
+    
+    position: relative;
+    top:18px;
+    left: -40px;
+}
