@@ -64,3 +64,22 @@ document.getElementById("btnVolverForm2").onclick = function() {
     $('.nivo a[href="#home"]').tab('show');
     document.getElementById("menu1").classList.add("disabled")
 }
+
+// $(function(){
+//     $('#editModal').modal({
+//         keyboard: true,
+//         backdrop: "static",
+//         show:false,
+        
+//     }).on('show', function(){
+//           var getIdFromRow = $(this).data('orderid');
+//         //make your ajax call populate items or what even you need
+//         $(this).find('#editTitle').html($('<b> Order Id selected: ' + getIdFromRow  + '</b>'))
+//     });
+    
+//     $(".table-striped").find('tr[data-target]').on('click', function(){
+//         //or do your operations here instead of on show of modal to populate values to modal.
+//          $('#editModal').data('orderid',$(this).data('id'));
+//     });
+    
+// });
