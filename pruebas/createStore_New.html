@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <title>Encuentra tu Funko Favorito</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="createStore_New.css" rel="stylesheet" media="screen">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    
+    <div class="contenedor">
+      <div id="navegacionCreateP">
+
+        <label id="cinta">
+          <span class="noselecc">Datos Personales</span>
+          <span class="selec">Datos de Tienda</span>
+          <span class="noselecc">Negocio</span>
+          <span class="noselecc">Contraseña</span>
+        </label>
+
+        <label>
+          <div class="line"></div>
+          <div class="linestrong"></div>
+        </label>
+
+      </div>
+
+      <div class="formularioTotal">
+
+        <div id="imagenesForm">
+          <img id="blah" alt="your image" width="300" height="300" style="
+          position: relative;
+          left: 130px;
+          top: 60px;
+          display: none;
+          " />
+          <img id="pre" src="ImagFunkos/AgregarFoto.PNG" style="display: block;width:300px;height:300px;position:relative;left:110px;top:50px"/>
+          <input id="archivito" type="file" onchange="document.getElementById('blah').src = window.URL.createObjectURL(this.files[0]);document.getElementById('pre').style.display='none';document.getElementById('blah').style.display='block'"
+           style="position: relative;top: -280px;left: 160px;">
+        </div>
+        <div id="form">
+          <form id="formulario">
+            <label for="formulario">
+              <span>Nombre Tienda</span><input type="text" name="field1" required="true" />
+            </label>
+            <label for="formulario">
+              <span>Direccion</span><input type="text" name="field2" required="true" />
+            </label>
+            <label for="formulario">
+              <span>Email Empresa</span><input type="text" name="field3" required="true" />
+            </label>
+            <label for="formulario">
+              <span>Telefono</span><input type="tel" name="field5" required="true" />
+            </label>
+            <button type="submit" value="Submit" id="botonVolver">Volver </button>
+            <button type="submit" value="Submit" id="botonRegistrar">Siguiente </button>
+          </form>
+        </div>
+
+      </div>
+      
+    </div>
+  </body>
+</html>
+
