@@ -1,0 +1,100 @@
+:root {
+    --color-blanco: #FDFDFD;
+    --color-dark-x: #ffffff;
+    --color-dark-xx: #E9E9E9;
+    --color-dark-xxx: #000000;
+    --color-light: #000000;
+    --color-grey: #F2AC29;
+}
+
+header{
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+body {
+    font-family: 'TT Norms', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 300;
+    background-color: var(--color-grey);
+    opacity: 72%;
+    color: var(--color-light);
+    letter-spacing: .05rem;
+}
+
+.bg-light {
+    background-color: var(--color-light)!important;
+}
+
+.bg-dark {
+    background-color: var(--color-blanco)!important;
+}
+
+.p-6 {
+    padding: 4rem 7rem;
+}
+
+.contact-box {
+    padding: 8.5rem;
+}
+
+.btn {
+    font-weight: 400;
+    padding: 1rem 2rem;
+    border-radius: 23px;
+    min-width: 10rem;
+}
+
+.btn-outline-dark {
+    border: 2px solid var(--color-dark-xx);
+}
+.btn-pers{
+    background-color: #2B65D9;
+    color: white;
+    font-family: 'TTNorms', sans-serif;
+    border: 1px solid #979797;
+    box-sizing: border-box;
+}
+
+
+.form-control {
+    opacity: 23%;
+    background-color: var(--color-dark-xx);
+    border: 2px  var(--color-light);
+    border-radius: .2rem;
+    padding: 0.9rem 1rem;
+}
+.register-bg {
+    background-image: url('i_panda.png');
+    background-repeat: no-repeat;
+    left: 10.56%;
+    right: 58.33%;
+    top: 30.27%;
+    bottom: -1.86%;
+    min-height: 100vh;
+}
+
+.testiomonial {
+    bottom: 10px
+}
+
+@media (max-width: 575.98px) {
+    .p-6 {
+        padding: 2rem;
+    }
+
+    .contact-box {
+        padding: 0;
+    }
+
+    .width-100 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1200px) { 
+    .register-bg {
+        min-height: 50vh;
+    }
+}
