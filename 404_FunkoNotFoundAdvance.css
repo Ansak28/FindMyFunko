@@ -1,0 +1,95 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 100%;
+}
+
+#Yellow{
+    display: grid;
+    grid-column: 1;
+    background-color: rgb(242,172,41,0.72);
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 80%;
+}
+
+#White{
+    display: grid;
+    grid-column: 2;
+    background-color: #F2F2F2;
+}
+
+#ContLoguito{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#Loguito{
+    width: 30%;
+    padding-top: 2%;
+}
+
+#ContTristeza{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#Tristeza{
+    
+    height: 80%;
+    padding-left: 14%;
+    padding-top:8%;
+}
+
+p,u{
+    font-family: 'TTNormsMedium';
+    font-style: normal;
+}
+
+#Texto_NotFound{
+    font-size: 4vw;
+    padding-left: 20%;
+    padding-top: 19%;
+    font-weight: bold;
+}
+
+#Texto_Add{
+    padding-left: 20%;
+    margin-top: -8%;
+    font-size: 1.5vw;
+    font-weight: 200;
+    font-style: normal;
+}
+
+#Texto_Inicio{
+    font-size: 1.5vw;
+    padding-left: 20%;
+}
+
+#Boton_Si{
+    margin-left: 20%;
+    margin-top: 0%;
+    width: 7vw;
+    height: 2vw;
+    background-color: rgb(43,101,217,1);
+    border-radius: 1.8vw;
+    border: none;
+    color: #F2F2F2;
+    font-weight: bolder;
+}
+
+#Boton_No{
+    margin-left: 50%;
+    margin-top: -8%;
+    width: 7vw;
+    height: 2vw;
+    background-color: rgb(43,101,217,1);
+    border-radius: 1.8vw;
+    border: none;
+    color: #F2F2F2;
+    font-weight: bolder;
+}
