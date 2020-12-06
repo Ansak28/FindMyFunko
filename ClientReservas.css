@@ -1,0 +1,151 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+html{
+    background-color: rgb(242,172,41,0.72);
+}
+
+body{
+    display: grid;
+    grid-template-rows: 20% 80%;
+    grid-template-columns: 100%;
+}
+
+p,u{
+    font-family: 'TTNormsMedium';
+    font-style: normal;
+}
+
+#Header{
+    grid-row: 1;
+    grid-column: 1;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 20% 10% 15% 15% 15% 15% 10%;
+}
+
+    #Loguito{
+        grid-row: 1;
+        grid-column: 1;
+        width: 50%;
+        margin-top: 5%;
+        margin-left: 10%;
+    }
+
+    #Busqueda_Header{
+        grid-row: 1;
+        grid-column: 3;
+        margin-top: 30%;
+        margin-left: 45%;
+        font-size: 1.4vw;
+    }
+
+    #Catalogo_Header{
+        grid-row: 1;
+        grid-column: 4;
+        margin-top: 30%;
+        margin-left: 45%;
+        font-size: 1.4vw;
+    }
+
+    #Reservas_Header{
+        grid-row: 1;
+        grid-column: 5;
+        margin-top: 30%;
+        margin-left: 45%;
+        font-size: 1.4vw;
+    }
+
+    #Favoritos_Header{
+        grid-row: 1;
+        grid-column: 6;
+        margin-top: 30%;
+        margin-left: 45%;
+        font-size: 1.4vw;
+    }
+
+#Contenido{
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 100%;
+}
+
+    #White{
+        grid-column: 2;
+        grid-row: 1;
+        background-color: #F2F2F2;
+        display: grid;
+        grid-template-rows: 10% 90%;
+        grid-template-columns: 100%;
+    }
+
+        #Active{
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+            #Lista{
+                margin-left: 1.5%;
+                margin-top: 1.5%;
+                background-color: rgb(43,118,217,1);
+                border: none;
+                color: white;
+                border-radius: 1.7vw;
+                width: 6vw;
+                height: 2vw;
+            }
+
+        #Funkos_Reservados{
+            display: grid;
+            grid-template-columns: 10% 27% 27% 26% 10% ;
+            grid-template-rows: 50% 50%;
+        }
+
+        .Texto{
+            font-size: 0.9vw;
+            margin-left: 33%;
+        }
+        
+        .Vence{
+            font-size: 0.9vw;
+            margin-left: 35%;
+        }
+
+        .Ver{
+            font-size: 0.9vw;
+            margin-left: 25%;
+        }
+
+        .Cancel{
+            font-size: 0.9vw;
+            margin-left: 20%;
+        }
+
+            #PrimerFunko{
+                grid-column: 2;
+                grid-row: 1;
+            }
+
+            .Funko{
+                width: 50%;
+                margin-left: 20%;
+            }
+
+            #SegundoFunko{
+                grid-column: 3;
+                grid-row: 1;
+            }
+
+            #TercerFunko{
+                grid-column: 4;
+                grid-row: 1;
+            }
+
+            #CuartoFunko{
+                grid-column: 2;
+                grid-row: 2;
+            }
+
+            
