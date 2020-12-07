@@ -9,7 +9,7 @@ a{
 
 }
 
-button{
+/* button{
 
   border-radius: 20%;
   font-size: 1vw;
@@ -18,7 +18,7 @@ button{
   border:  20vw transparent;
   background-color: rgb(43,101,217,1);
   color: black;
-}
+} */
 
 
 textarea:focus, input:focus{
@@ -117,10 +117,10 @@ header{
 
 #CintaOpciones li{
     display: inline;
-    padding-left: 3px;
+    padding-left: 1VW;
     padding-right: 3px;
     position: relative;
-    top: 45px;
+    top: -5VW;
     left: 180px;
     color: black;
     font-family: 'Abril Fatface', cursive;

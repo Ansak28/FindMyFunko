@@ -90,6 +90,9 @@ li a{
     width: 629px;
 }
 
+ul{
+    list-style-type: none;
+    }
 #Buscado{
     width: 550px;
     position: relative;
@@ -100,9 +103,9 @@ li a{
 #BarraBusqueda{
         background: url(ImagFunkos/Lupa.png) no-repeat scroll 1px 5px;
         background-position: 5px;
-        border-radius: 25px;
         border: 5px transparent;
         margin: auto;
+        /* margin-bottom: 19px; */
         background-size: 25px;
         padding-left:30px;
         width: 250px;

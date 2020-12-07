@@ -1,0 +1,66 @@
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+    opacity: 0.2; /* Firefox */
+}
+
+html{
+    height: 96%;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+
+button:focus {outline:0;}
+
+body{
+    background-color: #2B76D9;
+}
+
+.header {
+    float: right;
+    color: white;
+    font-family: 'Abril Fatface';
+    font-size: 25px;
+    position: relative;
+    right: 40px;
+    width: 100%;
+    text-align: right;
+}
+
+.imgn{
+    width: auto;
+    height: auto;
+    float: left;
+    top: -149px;
+    position: relative;
+}
+  
+
+
+button{
+    border-radius: 25px;
+    margin: auto;
+    position: relative;
+    border: 5px transparent;
+    background-color: black;
+    top: 15px;
+
+    width: auto;
+    height: auto;
+    color: white;
+}
+.btn {
+    display: inline-block;
+    background: black;
+    color: #fff;
+    padding: 0.4rem 1.3rem;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    transition: opacity 0.2s ease-in;
+    outline: none;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+    border-radius: 2px;
+  }

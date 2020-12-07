@@ -86,6 +86,18 @@ body{
     top: 40px;
 }
 
+
+#inError{
+    background-position: 6px;
+    margin: auto;
+    padding-left:30px;
+    width: 250px;
+    height: 35px;
+    color: black;
+    position: relative;
+    top: 40px;
+}
+
 #forgotPass{
     position: relative;
     top: 34px;
@@ -129,11 +141,12 @@ body{
     margin: auto;
     position: relative;
     border: 5px transparent;
-    background-color: rgb(242, 172, 41);
+    background-color:rgb(43, 118, 217,0.70);
     top: 70px;
     left: 25px;
     width: 200px;
     height: 50px;
+
     color: white;
 }
 #formLogin{
