@@ -1,0 +1,59 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    background-color: rgba(54,112,171,0.97);
+}
+
+body{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 90% 10%;
+}
+
+#Imagen{
+    grid-row: 1;
+    grid-column: 1;
+
+}
+
+#Gray{
+    background-color: rgba(216,216,216,1);
+    grid-row: 2;
+    grid-column: 1;
+}
+
+#Gray2{
+    background-color:  rgba(216,216,216,1);
+    grid-row: 2;
+    grid-column: 2;
+}
+
+#Imagen > img{
+    width: 30%;
+    margin-top: 10.1vw;
+    margin-left: 15vw;
+}
+
+#Welcome{
+    grid-row: 1;
+    grid-column: 2;
+}
+
+p{
+    font-family: 'TTNormsMedium';
+    font-style: normal;
+    color: white;
+}
+
+button{
+    border-radius: 5vw;
+    font-size: 1.2vw;
+    border: 1vw grey;
+    background-color: black;
+    margin-top: 2.5vw;
+    margin-left: 25vw;
+    width: 11vw;
+    height: 4vw;
+    color: white;
+    font-weight: bold;
+}
