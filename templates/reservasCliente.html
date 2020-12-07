@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link href="{{ url_for('static',filename='styles/reservasCliente.css') }}" rel="stylesheet">
+
+    <title>Búsqueda de Funko</title>
+
+</head>
+<header>
+    <div style="grid-column: 1;grid-row: 1">
+        <img style="width: 50%;height: 50%;margin-left: 25%;"  href="{{ url_for('home',userN=username) }}" src="{{ url_for('static', filename='images/loguito.png') }}">
+    </div>
+    <div style="grid-column: 2;grid-row: 1">
+        <a style="margin-left: 0;font-size: 1.5vw;position: relative;top: 60%;">Inicio</a>
+    </div>
+    <div style="grid-column: 3;grid-row: 1">
+        <a style="margin-left: 0;font-size: 1.5vw;position: relative;top: 60%;">Catalogo</a>
+    </div>
+    <div style="grid-column: 4;grid-row: 1">
+        <a style="margin-left: 0;font-size: 1.5vw;position: relative;top: 60%;">Bolsa</a>
+    </div>
+    <div style="grid-column: 5;grid-row: 1">
+        <a style="margin-left: 0;font-size: 1.5vw;position: relative;top: 60%;">Busqueda</a>
+    </div>
+</header>
+
+<body>
+    <section class="contact-box">
+        <div class="row no-gutters bg-dark">
+            <!-- <form id="formulario2" method="POST">
+            <select id="state" name="dropD" class="select-css" style="display: inline-block;">
+                <option  > Activos</button> </option>
+                <option  >Vencidos</option>
+                <option   >Completos</option>
+
+            </select>
+            <button type="submit" name="estado" class="btn btn-primary" value="estado">Filtrar</button> -->
+            </form>
+        </div>
+        <div class="row no-gutters bg-dark">
+
+            {% for item in reservas %}
+            <form id="formulario" 
+            method="POST">
+            <div class="col-sm d-flex justify-content-center mt-5 mb-5">
+                <div class="card"  style="width: 18rem;">
+                    <img class="card-img-top" src={{item.imagen}} alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title" name="nombreT">{{item.nombreT}}</h5>
+
+                      <div name="idFunko" style="visibility: hidden;">{{item.idFunko}}</div>
+                      <button type="submit" class="d-inline btn btn-outline-primary btn-sm" name="ver" value="ver">Ver</button>
+                      <button type="submit" class="d-inlinebtn btn-outline-danger btn-sm" name="Cancelar" value="Cancelar">Cancelar</button>
+                      <input type="hidden" name="nombreT" value={{item.nombreT}}>
+                      <input type="hidden" name="idFunko" value={{item.idFunko}}>
+                    </div>
+                  </div>
+              </div>
+              </form>
+              {% endfor %}
+
+
+        </div>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script type=text/javascript
+        src="{{url_for('static', filename='plugins/bower_components/jquery/dist/jquery.min.js') }}"></script>
+    <!-- <script>
+        $.getJSON('../static/json/jsonF4.json', function (data) {
+            $.each(data, function (index, value) {
+                var nombre;
+                var serie;
+
+                $("#lineaDP").append('<option rel="' + index + '" value="' + value.nombre + '">' + value.nombre + '</option>');
+
+
+            })
+        });
+    </script> -->
+</body>
+
+
+</html>

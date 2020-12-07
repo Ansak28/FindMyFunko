@@ -1,43 +1,49 @@
 <html>
-  
-  <head>
+
+<head>
     <title>Encuentra tu Funko Favorito</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="{{ url_for('static',filename='styles/FunkoLocated.css') }}" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link type="text/css" href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/tt-norms-medium" type="text/css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap" rel="stylesheet">  </head>
-  <header>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/tt-norms-medium" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap" rel="stylesheet">
+</head>
+<header>
     <div id="Space1" class="Espacios"></div>
     <div id="Logo">
         <a>
-            <img id="LogoHead" src="static/images/loguito.png">
+            <img id="LogoHead" src="{{ url_for('static', filename='images/loguito.png') }}">
         </a>
     </div>
     <div id="Space2" class="Espacios"></div>
     <nav id="barra">
         <ul id="CintaOpciones">
-            
+
             <li>
-                <a>  Inicio </a> 
+                <a style="text-decoration: underline black;"> Inicio </a>
+
             </li>
-            
+
             <li>
                 <a> Catalogo</a>
             </li>
             <li>
-                <a> Bolsa</a>
+                <a href="{{ url_for('reservasCliente',userN=username) }}"> Bolsa</a>
             </li>
             <li>
                 <a>Busqueda</a>
             </li>
-            <div class="linestrong"></div>
+            <!-- <div class="linestrong"></div> -->
         </ul>
     </nav>
-  </header>
-  <body>
+</header>
+
+<body>
 
     <div id="Contenedor">
+
         <div style=" grid-row: 1;grid-column: 1;" class="Spaces"></div>
         <div style=" grid-row: 1;grid-column: 2;" class="Spaces"></div>
         <div style=" grid-row: 1;grid-column: 3;" class="Spaces"></div>
@@ -47,28 +53,85 @@
         <div style=" grid-row: 3;grid-column: 2;" class="Spaces"></div>
         <div style=" grid-row: 3;grid-column: 3;" class="Spaces"></div>
         <div id="ContenedorInside">
+
             <div id="Funko">
                 <a style="grid-row: 1; margin-top:5%;margin-left: 5%;"> Regresar al mapa</a>
-                <img style="grid-row: 2;height: 62%;margin-left: 25%;margin-top:5%;max-width: 55%;max-height: 60%;" src="static/images/Caja.PNG">
+                <img style="grid-row: 2;height: 62%;margin-left: 25%;margin-top:5%;max-width: 55%;max-height: 60%;"
+                    src={{imagen}}>
             </div>
             <div id="Parametros">
+
                 <a style="grid-row:1;grid-column:2;margin-top: 25%;margin-left: 25%;"> 459 </a>
-                <a style="grid-row:2;grid-column:1;margin-left: 30%;font-size: 3vw;margin-top: 4%;">CAPITANA <br>MARVEL</a>
-                <a style="grid-row:3;grid-column:1;margin-left: 30%;">Linea: Avenger's Endgame</a>
-                <a style="grid-row:4;grid-column:1;margin-left: 40%;">Serie: 10</a>
-                <a style="grid-row:5;grid-column:1;margin-left: 36%;">Galeria Funko's</a>
-                <a style="grid-row:6;grid-column:1;margin-left: 30%;">Precio: S/.45 00</a>
-                <a style="grid-row:7;grid-column:1;margin-left: 30%;">Direccion: Jiron Paruro</a>
-                <a style="grid-row:8;grid-column:1;margin-left: 30%;">Contacto: 999 888 777</a>
-                <button style="grid-row:9;grid-column:1;margin-left: 30%;margin-left: 40%;" type="submit" value="Submit" id="botonRegistrar">Agregar a Favorios</button>
-                <button style="grid-row:10;grid-column:1;margin-left: 30%;margin-left: 45%;" type="submit" value="Submit" id="botonRegistrar"> + Reservar </button>
+                {% if estado == "r" %}
+                <a style="grid-row:2;grid-column:1;margin-left: 30%;font-size: 3vw;margin-top: 4%;"
+                    id="demo">{{hora}}</a>
+                {% else %}
+                <a style="grid-row:2;grid-column:1;margin-left: 30%;font-size: 3vw;margin-top: 4%;">{{nombreF}}</a>
+                {% endif %}
+                <a style="grid-row:3;grid-column:1;margin-left: 30%;">{{linea}}</a>
+                <a style="grid-row:4;grid-column:1;margin-left: 40%;">{{coleccion}}</a>
+                <a style="grid-row:5;grid-column:1;margin-left: 36%;">{{nombreT}}</a>
+                <a style="grid-row:6;grid-column:1;margin-left: 30%;">{{precio}}</a>
+                <a style="grid-row:7;grid-column:1;margin-left: 30%;">{{dir}}</a>
+                <a style="grid-row:8;grid-column:1;margin-left: 30%;">{{telf}}</a>
+                <!-- <button style="grid-row:9;grid-column:1;margin-left: 30%;margin-left: 40%;" type="submit" value="Submit" id="botonRegistrar">Agregar a Favorios</button> -->
+                {% if estado == "r" %}
+                <form id="formulario" style="grid-row:10;grid-column:1;margin-left: 30%;margin-left: 45%;"
+                    method="POST">
+                    <button type="submit" class="btn btn-success" disabled> {{btnR}}</button>
+                </form>
+                {% else %}
+                <form id="formulario" style="grid-row:10;grid-column:1;margin-left: 30%;margin-left: 45%;"
+                    method="POST">
+                    <button type="submit" class="btn btn-primary"> Reservar </button>
+                </form>
+                {% endif %}
             </div>
 
         </div>
 
+
     </div>
-   
-  </body>
+
+    </div>
+
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = document.getElementById("demo").textContent;
+
+        if (countDownDate != 0) {
+            dt = new Date(countDownDate);
+            dt.setHours(dt.getHours() + 1);
+            console.log(dt)
+            // Update the count down every 1 second
+
+
+            var x = setInterval(function () {
+
+                // Get today's date and time
+                var now = new Date().getTime();
+
+                // Find the distance between now and the count down date
+                var distance = dt - now;
+
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                // Display the result in the element with id="demo"
+                document.getElementById("demo").textContent = hours + "h "
+                    + minutes + "m " + seconds + "s ";
+
+                // If the count down is finished, write some text
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("demo").innerHTML = "Tiempo finalizado";
+                }
+            }, 1000);
+        }
+
+    </script>
+
+</body>
 
 </html>
-

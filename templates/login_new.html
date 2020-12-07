@@ -1,40 +1,48 @@
 <html>
-  <head>
-    <title>Encuentra tu Funko Favorito</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="{{ url_for('static',filename='styles/login.css') }}" rel="stylesheet" media="screen">
-    <link href="https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@300&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div class="contenedor">
 
-        <div id="supermanLogin">
-            <img src="static/images/i4.png" id="supermanLogin">
-        </div>
-        <!-- <p class="Texto">Peliculas</p>
+<head>
+  <title>Encuentra tu Funko Favorito</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="{{ url_for('static',filename='styles/login.css') }}" rel="stylesheet" media="screen">
+  <link href="https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="contenedor">
+
+    <div id="supermanLogin">
+      <img src="static/images/i4.png" id="supermanLogin">
+    </div>
+    <!-- <p class="Texto">Peliculas</p>
         <p class="Texto">Series</p>
         <p class="Texto">Animes</p>
         <p class="Texto">Entretenimiento y mas</p> !-->
-        <div style="position: relative;top: -300px;">
-            <img src="static/images/i_batwoman.png" id="marvelLogin">
-        </div>
-        
-        <form id="formLogin" method="POST">
-            <div>
-                    <img src="static/images/Logo.PNG" id="logoLogin">
-            </div>
-            <input id="inUname" type="text" id="uname" placeholder="Username" name="username"  autocomplete="off" value="{{
-              request.form.username }}">
-            <input id="inPass" type="password" id="pass" placeholder="Password" name="password"  value="{{
-              request.form.password }}">
-            <p id="forgotPass">Olvide mi contraseña</p>
-            <button type="submit" form="formLogin"  id="botonLogin" name="log" value="log">Log In</button>
-            <button type="submit"  id="botonRegistrar" name="log" value="reg">Registrarse</button>
-            <button type="submit"  id="botonPartner" name="log" value="part">Quiero ser Partner</button>
-
-        </form>
-
+    <div style="position: relative;top: -300px;">
+      <img src="static/images/i_batwoman.png" id="marvelLogin">
     </div>
-  </body>
-</html>
 
+    <form id="formLogin" method="POST">
+      <div>
+        <img src="static/images/Logo.PNG" id="logoLogin">
+      </div>
+      <input id="inUname" type="text" id="uname" placeholder="Username" name="username" autocomplete="off" value="{{
+              request.form.username }}">
+      <input id="inPass" type="password" id="pass" placeholder="Password" name="password" value="{{
+              request.form.password }}">
+      {% if error %}
+      <div id="inError">
+      <p ><strong>Error:</strong> {{ error }}
+
+      </div>
+        {% endif %}
+      <p id="forgotPass">Olvide mi contraseña</p>
+      <button type="submit" form="formLogin" id="botonLogin" name="log" value="log">Log In</button>
+      <button type="submit" id="botonRegistrar" name="log" value="reg">Registrarse</button>
+      <button type="submit" id="botonPartner" name="log" value="part">Quiero ser Partner</button>
+
+    </form>
+
+  </div>
+</body>
+
+</html>

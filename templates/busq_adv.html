@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link href="{{ url_for('static',filename='styles/busq_adv.css') }}" rel="stylesheet">
+
+    <title>Ingreso de Formulario</title>
+  </head>
+  <header>
+    <div style="grid-column: 1;grid-row: 1">
+      <img style="width: 50%;height: 50%;margin-left: 25%;" src="static/images/loguito.png">
+    </div>
+    <div style="grid-column: 2;grid-row: 1">
+      <a style="margin-left: 0;font-size: 1.5vw;position: relative;top: 60%;">Inicio</a>
+    </div>
+    <div style="grid-column: 3;grid-row: 1">
+      <a style="margin-left: 0;font-size: 1.5vw;position: relative;top: 60%;">Catalogo</a>
+    </div>
+    <div style="grid-column: 4;grid-row: 1">
+      <a style="margin-left: 0;font-size: 1.5vw;position: relative;top: 60%;">Bolsa</a>
+    </div>
+    <div style="grid-column: 5;grid-row: 1">
+      <a style="margin-left: 0;font-size: 1.5vw;position: relative;top: 60%;">Busqueda</a>
+    </div>
+</header>
+
+  <body>
+   <section class="contact-box">
+       <div class="row no-gutters bg-dark">
+           <div class="col-xl-5 col-lg-12 register-bg">
+            <img src="static/images/i_panda.png" alt="">
+
+           </div>
+           <div class="col-xl-7 col-lg-12 d-flex">
+                <div class="container align-self-center p-6">
+                    <h1 class="font-weight-bold mb-3">Formulario</h1>
+                    <form id="formulario" method="POST">
+                        <div class="form-row mb-3">
+                            <div class="form-group col-md-9">
+                                <input type="text" class="form-control colLetra" name="nombre" placeholder="Nombre del funko">
+                            </div>
+                            <div class="form-group col-md-3">
+                                  <input type="text" class="form-control"  name="numero" placeholder="Número">
+                            </div>
+                        </div>
+                        <div class="form-row mb-3">
+                            <div class="form-group col-md-5">
+                                <select id="LineaDP" class="btn select-css" name="linea">
+                                    <option value="000">-Selecciona la Linea-</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-7">
+                                <div class="btn-group btn-block">
+                                    <select id="ColeccionDp" class="btn select-css" name="coleccion">
+                                        <option value="000">-Selecciona la Coleccion/Serie-</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group mb-3">
+                            <!-- <div class="form-group row">
+                                <div class="col-sm-5">Exclusividad</div>
+                                <div class="col-sm-3">
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                    <label class="form-check-label" for="gridCheck1">
+                                      Si
+                                    </label>
+                                  </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                      <label class="form-check-label" for="gridCheck1">
+                                        No
+                                      </label>
+                                    </div>
+                                  </div>
+                            </div> -->
+                        </div>
+                        <div class="form-group mb-3">
+                            <div class="btn-group btn-block">
+                                <select id="MotivoDP" class="btn select-css" name="motivo">
+                                    <option value="000">-Selecciona el motivo</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group mb-3">
+                            <div class="">
+                                <textarea class="form-control" placeholder="¿Algún comentario adicional? .. " rows="4" ></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-default width-100 btn-pers font-weight-bold">Enviar</button>
+                    </form>
+                    <small class="d-inline-block text-muted mt-5">Todos los derechos reservados | © 2020 FindMyFunko</small>
+                </div>
+           </div>
+       </div>
+   </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <!-- <script src="busq_adv.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type=text/javascript
+    src="{{url_for('static', filename='plugins/bower_components/jquery/dist/jquery.min.js') }}"></script>
+    <script>
+        $.getJSON('../static/json/jsonF2.json', function (data) {
+            $.each(data, function (index, value) {
+                var nombre;
+                var serie;
+
+                $("#LineaDP").append('<option rel="' + index + '" value="' + value.nombre + '">' + value.nombre + '</option>');
+
+                $("#LineaDP").change(function () {
+                    $("#ColeccionDp").find("option:gt(0)").remove();
+                    $("#ColeccionDp").find("option:first").text("Loading...");
+
+                    country_id = $(this).find('option:selected').attr('rel');
+                    console.log("Country INDEX : " + country_id);
+
+                    $.each(data[country_id].serie, function (index1, value1) {
+                        $("#ColeccionDp").find("option:first").text("Seleccione");
+                        $("#ColeccionDp").append('<option rel="' + index1 + '" value="' + value1.nombre + '">' + value1.nombre + '</option>');
+                    });
+
+                });
+
+            })
+        });
+        $.getJSON('../static/json/jsonF3.json', function (data) {
+            $.each(data, function (index, value) {
+                var nombre;
+                var serie;
+
+                $("#MotivoDP").append('<option rel="' + index + '" value="' + value.nombre + '">' + value.nombre + '</option>');
+
+
+            })
+        });
+    </script>  
+</body>
+</html>

@@ -3,14 +3,37 @@
   <head>
     <title>Encuentra tu Funko Favorito</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <link href="{{ url_for('static',filename='styles/LandingPage.css') }}" rel="stylesheet" media="screen">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap" rel="stylesheet">  </head>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap" rel="stylesheet"> 
+    <style>
+        #result {
+         position: absolute;
+         width: 100%;
+         max-width: 522px;;
+         cursor: pointer;
+         overflow-y: auto;
+         max-height: 400px;
+         left: 100px;
+         color: #f1f1f1;
+         box-sizing: border-box;
+         z-index: 1001;
+         background-color: #2B65D9;
+        }
+        .link-class:hover{
+         background-color:#f1f1f1;
+         color: black;
+
+        }
+        </style>
+</head>
   <header>
     <div id="Space1" class="Espacios"></div>
     <div id="Logo">
         <a>
-            <img id="LogoHead" src="static/images/loguito.png">
+            <img id="LogoHead" href="{{ url_for('home',userN=username) }}" src="{{ url_for('static', filename='images/loguito.png') }}">
         </a>
     </div>
     <div id="Space2" class="Espacios"></div>
@@ -22,13 +45,13 @@
             </li>
             
             <li>
-                <a> Catalogo</a>
+                <a > Catalogo</a>
             </li>
             <li>
-                <a> Bolsa</a>
+                <a href="{{ url_for('reservasCliente',userN=username) }}"> Bolsa</a>
             </li>
             <li>
-                <a>Busqueda</a>
+                <a href="{{ url_for('bBasico',userN=username) }}">Busqueda</a>
             </li>
             <div class="linestrong"></div>
         </ul>
@@ -40,19 +63,24 @@
         <div id="Content">
             <div id="Texto">
                 <a>
-                    Increibles <br>
+                    Increíbles <br>
                     Funkos esperan <br>
                     por ti
                 </a>
             </div>
             <div id="Buscador">
-                <form id="Buscado">
-                    <input type="text" name="Buscador" id="BarraBusqueda" placeholder="Ingresa el Numero de Serie o Nombre del Funko">
+                <form id="Buscado" method="POST" >
+                    <input type="text" name="Buscador" id="BarraBusqueda" class="form-control" autocomplete="off" placeholder="Ingresa el Numero de Serie o Nombre del Funko">
+                </form>
+                <form id="SSS" method="POST">
+                    <input type="text" name="val" id="valor" style="display: none;">
                 </form>
             </div>
+            <ul class="list-group" id="result"></ul>
+            <br />
             <div id="Mercury">
 
-                <img src="static/images/i10_FM.png" style="width: 560px;height: 400px;top: 20px;position: relative;left: 50px;" >
+                <img src="{{ url_for('static', filename='images/i10_FM.png') }}" style="width: 560px;height: 400px;top: 20px;position: relative;left: 50px;" >
     
             </div>
         </div>
@@ -63,7 +91,7 @@
         <div id="ContentCatalogo">
             <div id="Trio" style="width: 700px;">
 
-                <img src="static/images/Trio-removebg-preview.png" style="width: 560px;height: 450px;top: 10px;position: relative;left: 50px;" >
+                <img src="{{ url_for('static', filename='images/Trio-removebg-preview.png') }}" style="width: 560px;height: 450px;top: 10px;position: relative;left: 50px;" >
     
             </div>
             <div id="TextoCatalogo">
@@ -97,7 +125,7 @@
 
             <div id="Mercury">
 
-                <img src="static/images/i6.png" style="width: 560px;height: 440px;top: 10px;position: relative;left: 50px;" >
+                <img src="{{ url_for('static', filename='images/i6.png') }}" style="width: 560px;height: 440px;top: 10px;position: relative;left: 50px;" >
     
             </div>
         </div>
@@ -109,7 +137,34 @@
   </body>
 
   <footer>
-    <img style="width: 100%;height: 420px;" src="static/images/Footer.PNG">
+    <img style="width: 100%;height: 420px;" src="{{ url_for('static', filename='images/Footer.png') }}">
   </footer>
 </html>
+<script>
+    $(document).ready(function(){
+     $('#BarraBusqueda').keyup(function(){
+      $('#result').html('');
+      var searchField = $('#BarraBusqueda').val();
+      var expression = new RegExp(searchField, "i");
+      
+      $.getJSON('../static/json/json.json', function(data) {
+       $.each(data, function(key, value){
+        if (value.Nombre.search(expression) != -1 || value.Linea.search(expression) != -1)
+        {
+         $('#result').append('<li class="list-group-item link-class"><img src="'+value.Imagen+'" height="40" width="40" class="img-thumbnail" /> '+value.Nombre+' | <span class="text-muted">'+value.Linea+'</span> <span class="text-muted" style="display:none;">'+'|'+value.id+'</span></li>');
+        }
+       });   
+      });
+     });
+     
+     $('#result').on('click', 'li', function() {
+      var click_text = $(this).text().split('|');
+      $('#BarraBusqueda').val($.trim(click_text[2]));
+      $('#valor').val($.trim(click_text[2]));
+
+      
+      $("#result").html('');
+     });
+    });
+    </script>
 
